@@ -1,0 +1,13 @@
+# Ignore sensitive network credentials
+*.conf
+!/etc/modprobe.d/rtw88.conf  # Keep this one as it's safe and educational
+
+# Ignore temporary/log files
+*.log
+*.tmp
+boot_errors.txt
+hardware_info.txt
+
+# Ignore OS metadata
+.DS_Store
+Thumbs.db
