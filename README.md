@@ -121,8 +121,11 @@ HandleLidSwitchDocked=ignore
 - [x]**Virtualization Ready** BIOS and Kernel verified for KVM/LXC deployment.
 
 ## Key Learning Outcomes
--**Linux Networking Fundamentals:** Gained hands-on experience with Layer 2 (Bridging) vs Layer 3 (Routing) and why consumer Wi-Fi drivers require a routed approach. Since my Wi-Fi card refused to share it's desk (Bridging), I turned the server into a Mailroom (Routing) to handle everyone's messages personally.
--**Kernel Tuning:** Learned how to stabilize buggy hardware by passing specific parameters to kernel modules via *modprobe.d*.  I added a 'Stay Awake' sticky note to the Wi-Fi manual so the Engine wouldn't stall trying to save power.
--**System Reliability Engineering (SRE):** Developed a "Bootstrap" methodology using mobile tethering to recover a system without native Ethernet support.
--**Network Persistence:** Implemented DHCP Static Leases to balance driver stability with the need for a fixed server identity.
+- **Linux Networking Fundamentals:** Gained hands-on experience with Layer 2 (Bridging) vs Layer 3 (Routing) and why consumer Wi-Fi drivers require a routed approach. Since my Wi-Fi card refused to share it's desk (Bridging), I turned the server into a Mailroom (Routing) to handle everyone's messages personally.
+
+- **Kernel Tuning:** Learned how to stabilize buggy hardware by passing specific parameters to kernel modules via *modprobe.d*.  I added a 'Stay Awake' sticky note to the Wi-Fi manual so the Engine wouldn't stall trying to save power.
+
+- **System Reliability Engineering (SRE):** Developed a "Bootstrap" methodology using mobile tethering to recover a system without native Ethernet support.
+
+- **Network Persistence:** Implemented DHCP Static Leases to balance driver stability with the need for a fixed server identity.
 
