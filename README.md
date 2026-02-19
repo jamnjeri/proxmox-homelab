@@ -1,7 +1,9 @@
 # Proxmox Home Lab: Turning an old HP Envy Laptop into a Proxmox Server
 
 ## Project Goal: 
-- Deploy a stable Proxmox VE 9.x environment on an HP Envy (i7-7500U) using a Realtek RTL8822BE Wi-Fi adapter as the primary management interface 
+Deploy a stable Proxmox VE 9.x environment on an HP Envy (i7-7500U) using a Realtek RTL8822BE Wi-Fi adapter as the primary management interface 
+
+---
 
 ## Hardware & Requirements
 - HP Envy Laptop (or similar to be used as the server)
@@ -72,7 +74,7 @@ options rtw88_8822be disable_lps_deep=Y
 - **Result:** The server always receives it's ip address via DHCP, ensuring a permanent management address without the risk of driver-crashing local static configs.
 
 2. Wi-Fi Credentials Configuration (```/etc/wpa_supplicant/wpa_supplicant.conf```)
-- This file essentially tells the Wi-Fi card which network to join and what the password is. Without this, the server knows *how to* talk to the router butdoesn't have the *credentials* to get in. So I manually configured *wpa_supplicant* service. This acts as the "handshake" between the Realtek hardware and the router.
+- This file essentially tells the Wi-Fi card which network to join and what the password is. Without this, the server knows *how to* talk to the router but doesn't have the *credentials* to get in. So I manually configured *wpa_supplicant* service. This acts as the "handshake" between the Realtek hardware and the router.
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
